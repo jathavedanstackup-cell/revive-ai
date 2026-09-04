@@ -95,6 +95,21 @@ function App() {
 
       const result = await response.json();
       setExecution(result);
+
+      if (result.status === "SUCCESS") {
+        setSelectedPayment((current) => {
+          if (!current || current.id !== payment.id) {
+            return current;
+          }
+
+          return {
+            ...current,
+            status: "RECOVERED",
+            action: "STOP",
+          };
+        });
+      }
+
       await loadPayments();
     } catch (err) {
       setError(
@@ -1109,6 +1124,7 @@ function formatAuditEvent(value) {
     .toUpperCase();
 }
 export default App;
+
 
 
 

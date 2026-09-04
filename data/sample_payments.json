@@ -1,0 +1,42 @@
+﻿[
+    {
+        "payment_id":  "PAY-000001",
+        "amount":  7499,
+        "currency":  "INR",
+        "failure_code":  "issuer_timeout",
+        "customer_history":  0.92,
+        "previous_failures":  0,
+        "expected_action":  "STOP",
+        "status":  "RECOVERED"
+    },
+    {
+        "payment_id":  "PAY-000002",
+        "amount":  3200,
+        "currency":  "INR",
+        "failure_code":  "insufficient_funds",
+        "customer_history":  0.68,
+        "previous_failures":  1,
+        "expected_action":  "CUSTOMER_INTERVENTION",
+        "status":  "FAILED"
+    },
+    {
+        "payment_id":  "PAY-000003",
+        "amount":  9800,
+        "currency":  "INR",
+        "failure_code":  "unknown",
+        "customer_history":  0.31,
+        "previous_failures":  2,
+        "expected_action":  "ESCALATE",
+        "status":  "FAILED"
+    },
+    {
+        "payment_id":  "PAY-000004",
+        "amount":  4200,
+        "currency":  "INR",
+        "failure_code":  "network_error",
+        "customer_history":  0.88,
+        "previous_failures":  0,
+        "expected_action":  "RETRY_NOW",
+        "status":  "FAILED"
+    }
+]

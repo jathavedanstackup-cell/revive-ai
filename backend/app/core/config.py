@@ -14,6 +14,7 @@ APP_ENV = os.getenv("APP_ENV", "development")
 _DEFAULT_CORS_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "https://revive-ai-nine.vercel.app",
 ]
 
 _EXTRA_CORS_ORIGINS = [
